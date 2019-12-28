@@ -5,21 +5,15 @@ import { Nums } from "../../components/Nums";
 type Props = {
     navigation : any
 };
-export class Home extends React.Component<Props> {
+export class Game extends React.Component<Props> {
     static navigationOptions = {
-        title: '首页',
-        headerStyle: {
-          backgroundColor: '#fff',
-        },
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        }
-    };
+        title: '比赛',
+      };
     render() {
         return (
           <View style={styles.container}>
-              <Text>home</Text>
-              <Nums />
+            <Text>比赛</Text>
+            <Nums />
           </View>
         );
     }

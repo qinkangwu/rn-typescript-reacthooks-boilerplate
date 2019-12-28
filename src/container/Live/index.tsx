@@ -5,21 +5,25 @@ import { Nums } from "../../components/Nums";
 type Props = {
     navigation : any
 };
-export class Home extends React.Component<Props> {
+export class Live extends React.Component<Props> {
     static navigationOptions = {
-        title: '首页',
-        headerStyle: {
-          backgroundColor: '#fff',
-        },
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        }
+        title: '直播',
     };
     render() {
         return (
           <View style={styles.container}>
-              <Text>home</Text>
-              <Nums />
+            <Text>detail</Text>
+            <Nums />
+            <Button
+              title="Go to home"
+              onPress={() => {
+                /* 1. Navigate to the Details route with params */
+                this.props.navigation.navigate('Home', {
+                  itemId: 86,
+                  otherParam: 'anything you want here',
+                });
+              }}
+            />
           </View>
         );
     }

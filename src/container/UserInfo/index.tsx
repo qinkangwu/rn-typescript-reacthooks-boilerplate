@@ -5,14 +5,14 @@ import { Nums } from "../../components/Nums";
 type Props = {
     navigation : any
 };
-export class Detail extends React.Component<Props> {
+export class UserInfo extends React.Component<Props> {
     static navigationOptions = {
-        title: 'DetailsScreen',
-      };
+        title: '我的',
+    };
     render() {
         return (
           <View style={styles.container}>
-            <Text>detail</Text>
+            <Text>我的</Text>
             <Nums />
           </View>
         );
