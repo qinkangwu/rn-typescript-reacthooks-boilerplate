@@ -14,3 +14,7 @@
           RCTReadString(input, "__unused");
  }
 ```
+
+## ios13深色模式 StatusBar content无效问题
+
+> 解决办法：https://github.com/facebook/react-native/issues/26619#issuecomment-536191518
